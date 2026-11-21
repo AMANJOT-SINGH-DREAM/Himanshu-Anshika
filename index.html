@@ -229,7 +229,11 @@
     border:2px solid #c9a14a;
     border-radius:50%;
     display:flex;align-items:center;justify-content:center;
-    background:radial-gradient(circle, rgba(246,236,217,.95), rgba(232,220,192,.9));
+    background-image:url('./pic.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-color:var(--cream);
     box-shadow:
       0 0 40px rgba(201,161,74,.6),
       0 0 80px rgba(201,161,74,.3),
@@ -247,11 +251,7 @@
     transform:scale(1.15);
   }
   .landing-monogram span{
-    font-family:'Allura',cursive;
-    font-size:38px;
-    color:#6b0f1a;
-    line-height:1;
-    letter-spacing:-4px;
+    display:none;
   }
   @keyframes glow{
     from{box-shadow:0 0 40px rgba(201,161,74,.6), 0 0 80px rgba(201,161,74,.3), inset 0 2px 6px rgba(255,255,255,.7)}
@@ -1054,7 +1054,7 @@
   <div class="pelmet"></div>
 
   <div class="landing-overlay" id="landingOverlay">
-    <div class="landing-monogram"><span>H&amp;A</span></div>
+    <div class="landing-monogram" role="img" aria-label="Himanshu and Anshika image"></div>
     <div class="landing-invited">~ You are cordially invited ~</div>
     <div class="landing-names">Himanshu &amp; Anshika</div>
     <button class="tap-btn" id="openBtn" type="button">Tap to Open</button>
